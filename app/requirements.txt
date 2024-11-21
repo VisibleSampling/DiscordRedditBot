@@ -1,0 +1,10 @@
+
+## Discord Req
+discord.py
+python-dotenv
+
+
+## App Req
+asyncpraw
+praw
+pathlib

@@ -1,0 +1,15 @@
+services:
+  discord_bot:
+    build: .
+    volumes:
+      - ./exclusionlist.txt:/app/excluded_keywords.txt
+    environment:
+      - DISCORD_CHANNEL_ID=your_channel_id
+      - BOT_PREFIX=!
+      - REDDIT_CLIENT=your_client_id
+      - REDDIT_SECRET=your_secret
+      - REDDIT_USER_AGENT=your_user_agent
+      - REDDIT_USERNAME=your_username
+      - REDDIT_PASSWORD=your_password
+      - REDDIT_SUBREDDIT=your_subreddit
+    restart: unless-stopped
