@@ -34,7 +34,7 @@ services:
 3. (Optional) Create exclusionlist.txt with keywords to filter, one per line
 
 ## Running
-`docker compose up`
+`docker compose up -d`
 
 ## Requirements
 - Docker
